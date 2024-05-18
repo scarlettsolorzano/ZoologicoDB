@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Zoologico.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Zoologico.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Zoologico.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Zoologico.props",
+      "PackagePath": "build\\Zoologico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Zoologico.props",
+      "PackagePath": "buildMultiTargeting\\Zoologico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Zoologico.props",
+      "PackagePath": "buildTransitive\\Zoologico.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

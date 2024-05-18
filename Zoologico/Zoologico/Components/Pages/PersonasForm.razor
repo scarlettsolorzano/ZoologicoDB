@@ -1,0 +1,78 @@
+﻿@page "/personas/nueva"
+@page "/personas/editar/{id:int}"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator; 
+@inject IRepositorioPersonas _repositorio;
+<h2>@_mensaje Persona</h2>
+<EditForm Model="_persona" FormName="frmPersona" OnInvalidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <div class="row mb-3">
+        <label for="txtNombre" class="col-2 col-form-label">Nombre</label>
+        <div class="col-10">
+            <InputText id="txtNombre" class="form-control" @bind-Value="_persona.Nombre" />
+            <ValidationMessage For="@(() => _persona.Nombre)" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="txtTelefono" class="col-2 col-form-label">Teléfono</label>
+        <div class="col-10">
+            <InputText id="txtTelefono" class="form-control" @bind-Value="_persona.Telefono" />
+            <ValidationMessage For="@(() => _persona.Telefono)" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="txtArea" class="col-2 col-form-label">Área</label>
+        <div class="col-10">
+            <InputSelect class="form-select" @bind-Value="_persona.AreaId">
+                <option value="0" enable="enable">Seleccione un área</option>
+                @foreach (Area area in _areas)
+                {
+                    <option value="@area.Id">@area.Nombre</option>
+                }"
+                </InputSelect>
+            <ValidationMessage For="@(() => _persona.AreaId)" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" @onclick="Guardar">Guardar</button>
+    <button class="btn btn-danger ms-3" @onclick="Cancelar" @onclick:preventDefault>Cancelar</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private string _mensaje = "";
+    private Persona? _persona = new();
+    private List<Area> _areas = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _areas = await _repositorio.GetAreas();
+        if (Id > 0)
+        {
+            _persona = await _repositorio.Get(Id);
+            _mensaje = "Modificar";
+        }
+        else
+        {
+            _mensaje = "Nueva";
+        }
+    }
+
+    private async Task Guardar()
+    {
+        if (Id > 0)
+        {
+            await _repositorio.Update(Id, _persona);
+        }
+        else
+        {
+            await _repositorio.Add(_persona);
+        }
+        Cancelar();
+    }
+
+    private void Cancelar()
+    {
+        _navigator.NavigateTo("/personas");
+    }
+}

@@ -1,0 +1,62 @@
+﻿@page "/areas"
+@rendermode InteractiveServer
+@inject NavigationManager _navigator
+@inject IRepositorioAreas _repositorio
+<h3>Areas</h3>
+<a class="btn btn-success" href="areas/nueva">Agregar area</a>
+@if (_areas == null)
+{
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Cargando...</span>
+    </div>
+}
+else if (_areas.Count == 0)
+{
+    <h3>No hay areas registradas</h3>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var area in _areas)
+            {
+                <tr>
+                    <td>@area.Id</td>
+                    <td>@area.Nombre</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => Modificar(area.Id)">Modificar</button>
+                        <button class="btn btn-danger" @onclick="() => Eliminar(area)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Area>? _areas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //_personas = await _repositorio.GetAll();
+    }
+
+    private async void Eliminar(Area area)
+    {
+        //await _repositorio.Delete(persona.Id);
+        _areas!.Remove(area);
+        StateHasChanged();
+    }
+
+    private async void Modificar(int id)
+    {
+        _navigator.NavigateTo($"/areas/editar/{id}");
+    }
+}
