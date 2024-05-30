@@ -5,6 +5,7 @@ namespace Zoologico.Repositorio
 {
     public class RepositorioPersonas : IRepositorioPersonas
     {
+        // inyeccíón de dependencia, Info del contexto de la base de datos 
         private readonly ZoologicoDBContext _context;
 
         public RepositorioPersonas(ZoologicoDBContext context)
@@ -16,6 +17,7 @@ namespace Zoologico.Repositorio
         {
             return await _context.Personas.ToListAsync();
         }
+        //Jala la info de la bd de areas 
         public async Task<List<Area>> GetAreas()
         {
             return await _context.Areas.ToListAsync();
@@ -35,7 +37,7 @@ namespace Zoologico.Repositorio
 
         public async Task Update(int id, Persona persona)
         {
-            var personaActual = await _context.Personas.FindAsync(id);
+            var personaActual = await _context.Personas.FindAsync(id); // Busca la persona a actualizar por su id
             if (personaActual != null)
             {
                 personaActual.Nombre = persona.Nombre;

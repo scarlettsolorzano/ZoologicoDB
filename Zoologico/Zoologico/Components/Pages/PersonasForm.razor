@@ -3,13 +3,13 @@
 @rendermode InteractiveServer
 @inject NavigationManager _navigator; 
 @inject IRepositorioPersonas _repositorio;
-<h2>@_mensaje Persona</h2>
+<h2>@_mensaje Trabajador</h2>
 <EditForm Model="_persona" FormName="frmPersona" OnInvalidSubmit="Guardar">
     <DataAnnotationsValidator />
     <div class="row mb-3">
         <label for="txtNombre" class="col-2 col-form-label">Nombre</label>
         <div class="col-10">
-            <InputText id="txtNombre" class="form-control" @bind-Value="_persona.Nombre" />
+            <InputText id="txtNombre" class="form-control" @bind-Value="_persona!.Nombre" />
             <ValidationMessage For="@(() => _persona.Nombre)" />
         </div>
     </div>
@@ -40,7 +40,7 @@
 @code {
     [Parameter]
     public int Id { get; set; }
-    private string _mensaje = "";
+    private string _mensaje = ""; //
     private Persona? _persona = new();
     private List<Area> _areas = new();
 
@@ -60,13 +60,14 @@
 
     private async Task Guardar()
     {
+        //
         if (Id > 0)
         {
-            await _repositorio.Update(Id, _persona);
+            await _repositorio.Update(Id, _persona!);
         }
         else
         {
-            await _repositorio.Add(_persona);
+            await _repositorio.Add(_persona!);
         }
         Cancelar();
     }

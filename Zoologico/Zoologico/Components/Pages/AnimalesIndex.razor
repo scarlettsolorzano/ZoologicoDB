@@ -4,6 +4,9 @@
 @inject IRepositorioAnimales _repositorio
 <h3>Animales</h3>
 <a class="btn btn-success" href="animales/nueva">Agregar animal</a>
+<a class="btn btn-success" href="areas">Ver áreas</a>
+<a class="btn btn-success" href="personas">ver trabajadores</a>
+
 @if (_animales == null)
 {
     <div class="spinner-border" role="status">
@@ -19,8 +22,9 @@ else
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Especie</th>
+                <th>Sexo</th>
+                <th>Área</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -28,9 +32,10 @@ else
             @foreach (var animal in _animales)
             {
                 <tr>
-                    <td>@animal.Id</td>
                     <td>@animal.Especie</td>
-                    <td>@animal.AreaId</td>
+                    <td>@animal.Sexo</td>
+                    <td>@animal.Area.Nombre</td>
+                    @*<td>@animal.Area.Nombre</td>*@
 
                     <td>
                         <button class="btn btn-primary" @onclick="() => Modificar(animal.Id)">Modificar</button>
@@ -44,20 +49,22 @@ else
 
 @code {
     private List<Animal>? _animales;
+    private List<Area>? _areas;
 
     protected override async Task OnInitializedAsync()
     {
-        //_personas = await _repositorio.GetAll();
+        _areas = await _repositorio.GetAreas();
+        _animales = await _repositorio.GetAll();
     }
 
     private async void Eliminar(Animal animal)
     {
-        //await _repositorio.Delete(persona.Id);
+        await _repositorio.Delete(animal.Id);
         _animales!.Remove(animal);
         StateHasChanged();
     }
 
-    private async void Modificar(int id)
+    private void Modificar(int id)
     {
         _navigator.NavigateTo($"/animales/editar/{id}");
     }

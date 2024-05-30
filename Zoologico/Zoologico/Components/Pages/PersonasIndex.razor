@@ -2,8 +2,10 @@
 @rendermode InteractiveServer
 @inject NavigationManager _navigator
 @inject IRepositorioPersonas _repositorio
-<h3>Personas</h3>
-<a class="btn btn-success" href="personas/nueva">Agregar persona</a>
+<h3>Trabajadores</h3>
+<a class="btn btn-success" href="personas/nueva">Agregar Trabajador</a>
+<a class="btn btn-success" href="areas">Ver áreas</a>
+<a class="btn btn-success" href="animales">Ver animales</a>
 @if (_personas == null)
 {
     <div class="spinner-border" role="status">
@@ -12,14 +14,13 @@
 }
 else if (_personas.Count == 0)
 {
-    <h3>No hay personas registradas</h3>
+    <h3>No hay trabajadores registrados</h3>
 }
 else
 {
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nombre</th>
                 <th>Telefono</th>
                 <th>Área</th>
@@ -30,10 +31,9 @@ else
             @foreach (var persona in _personas)
             {
                 <tr>
-                    <td>@persona.Id</td>
                     <td>@persona.Nombre</td>
                     <td>@persona.Telefono</td>
-                    <td>@persona.AreaId</td>
+                    <td>@persona.Area!.Nombre</td>
                     <td>
                         <button class="btn btn-primary" @onclick="() => Modificar(persona.Id)">Modificar</button>
                         <button class="btn btn-danger" @onclick="() => Eliminar(persona)">Eliminar</button>
@@ -46,10 +46,12 @@ else
 
 @code {
     private List<Persona>? _personas;
+    private List<Area>? _areas;
 
     protected override async Task OnInitializedAsync()
     {
         _personas = await _repositorio.GetAll();
+        _areas = await _repositorio.GetAreas();
     }
 
     private async void Eliminar(Persona persona)

@@ -13,6 +13,10 @@ namespace Zoologico.Repositorio
         {
             return await _context.Animales.FindAsync(id);
         }
+        public async Task<List<Area>> GetAreas()
+        {
+            return await _context.Areas.ToListAsync();
+        }
         public async Task<Animal> Add(Animal animal)
         {
             await _context.Animales.AddAsync(animal);

@@ -3,13 +3,13 @@
 @rendermode InteractiveServer
 @inject NavigationManager _navigator; 
 @inject IRepositorioAreas _repositorio;
-<h2>@_mensaje Persona</h2>
+<h2>@_mensaje Area</h2>
 <EditForm Model="_area" FormName="frmArea" OnInvalidSubmit="Guardar">
     <DataAnnotationsValidator />
     <div class="row mb-3">
         <label for="txtNombre" class="col-2 col-form-label">Nombre</label>
         <div class="col-10">
-            <InputText id="txtNombre" class="form-control" @bind-Value="_area.Nombre" />
+            <InputText id="txtNombre" class="form-control" @bind-Value="_area!.Nombre" />
             <ValidationMessage For="@(() => _area.Nombre)" />
         </div>
     </div>
@@ -40,13 +40,15 @@
     {
         if (Id > 0)
         {
-            await _repositorio.Update(Id, _area);
+            await _repositorio.Update(Id, _area!);
+            _navigator.NavigateTo("/areas");
         }
         else
         {
-            await _repositorio.Add(_area);
+            await _repositorio.Add(_area!);
+            _navigator.NavigateTo("/areas");
         }
-        Cancelar();
+        
     }
 
     private void Cancelar()

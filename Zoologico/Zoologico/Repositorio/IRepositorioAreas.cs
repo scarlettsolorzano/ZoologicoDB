@@ -3,7 +3,8 @@
 namespace Zoologico.Repositorio
 {
     public interface IRepositorioAreas
-    {
+    { 
+        //acceder a los metodos 
         Task<List<Area>> GetAll();
         Task<Area?> Get(int id);
         Task<Area> Add(Area area);

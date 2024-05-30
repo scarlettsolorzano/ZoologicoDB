@@ -160,3 +160,4 @@ C:\Users\Estudiante\Desktop\Zoologico\Zoologico\Zoologico\obj\Debug\net8.0\refin
 C:\Users\Estudiante\Desktop\Zoologico\Zoologico\Zoologico\obj\Debug\net8.0\Zoologico.pdb
 C:\Users\Estudiante\Desktop\Zoologico\Zoologico\Zoologico\obj\Debug\net8.0\Zoologico.genruntimeconfig.cache
 C:\Users\Estudiante\Desktop\Zoologico\Zoologico\Zoologico\obj\Debug\net8.0\ref\Zoologico.dll
+C:\Users\Estudiante\Desktop\Zoologico\Zoologico\Zoologico\obj\Debug\net8.0\Zoologico.sourcelink.json

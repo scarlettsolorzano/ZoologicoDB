@@ -4,6 +4,8 @@
 @inject IRepositorioAreas _repositorio
 <h3>Areas</h3>
 <a class="btn btn-success" href="areas/nueva">Agregar area</a>
+<a class="btn btn-success" href="personas">Ver trabajadores</a>
+<a class="btn btn-success" href="animales">Ver animales</a>
 @if (_areas == null)
 {
     <div class="spinner-border" role="status">
@@ -19,7 +21,6 @@ else
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nombre</th>
                 <th>Acciones</th>
             </tr>
@@ -28,7 +29,6 @@ else
             @foreach (var area in _areas)
             {
                 <tr>
-                    <td>@area.Id</td>
                     <td>@area.Nombre</td>
                     <td>
                         <button class="btn btn-primary" @onclick="() => Modificar(area.Id)">Modificar</button>
@@ -45,17 +45,17 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        //_personas = await _repositorio.GetAll();
+        _areas = await _repositorio.GetAll();
     }
 
     private async void Eliminar(Area area)
     {
-        //await _repositorio.Delete(persona.Id);
+        await _repositorio.Delete(area.Id);
         _areas!.Remove(area);
         StateHasChanged();
     }
 
-    private async void Modificar(int id)
+    private  void Modificar(int id)
     {
         _navigator.NavigateTo($"/areas/editar/{id}");
     }
