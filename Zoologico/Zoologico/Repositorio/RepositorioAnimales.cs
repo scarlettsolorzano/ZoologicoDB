@@ -7,7 +7,7 @@ namespace Zoologico.Repositorio
     {
         public async Task<List<Animal>> GetAll()
         {
-            return await _context.Animales.ToListAsync();
+            return await _context.Animales.Include(a => a.Area).ToListAsync();
         }
         public async Task<Animal?> Get(int id)
         {

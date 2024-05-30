@@ -35,7 +35,7 @@ else
                     <td>@animal.Especie</td>
                     <td>@animal.Sexo</td>
                     <td>@animal.Area.Nombre</td>
-                    @*<td>@animal.Area.Nombre</td>*@
+                  
 
                     <td>
                         <button class="btn btn-primary" @onclick="() => Modificar(animal.Id)">Modificar</button>
@@ -49,11 +49,9 @@ else
 
 @code {
     private List<Animal>? _animales;
-    private List<Area>? _areas;
-
+    
     protected override async Task OnInitializedAsync()
     {
-        _areas = await _repositorio.GetAreas();
         _animales = await _repositorio.GetAll();
     }
 

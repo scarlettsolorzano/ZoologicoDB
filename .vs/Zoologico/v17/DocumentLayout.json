@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\components\\pages\\areasform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\components\\pages\\areasform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\components\\pages\\personasform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\components\\pages\\personasform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\repositorio\\repositorioanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\repositorio\\repositorioanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\components\\pages\\animalesindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\components\\pages\\animalesindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\repositorio\\repositoriopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\repositorio\\repositoriopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\repositorio\\irepositorioanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\repositorio\\irepositorioanimales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|c:\\users\\estudiante\\desktop\\zoologico\\zoologico\\zoologico\\components\\pages\\personasindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F09A52E7-D58A-4BC9-A918-E2A0C0481EDA}|Zoologico\\Zoologico\\Zoologico.csproj|solutionrelative:zoologico\\zoologico\\components\\pages\\personasindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AreasForm.razor",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\AreasForm.razor",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Components\\Pages\\AreasForm.razor",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\AreasForm.razor",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Components\\Pages\\AreasForm.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:39:08.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnimalesIndex.razor",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\AnimalesIndex.razor",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Components\\Pages\\AnimalesIndex.razor",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\AnimalesIndex.razor",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Components\\Pages\\AnimalesIndex.razor",
+              "ViewState": "AQIAACwAAAAAAAAAAAAQwDkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:35:39.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositorioAnimales.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\RepositorioAnimales.cs",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Repositorio\\RepositorioAnimales.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\RepositorioAnimales.cs",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Repositorio\\RepositorioAnimales.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T01:34:26.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepositorioAnimales.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\IRepositorioAnimales.cs",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Repositorio\\IRepositorioAnimales.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\IRepositorioAnimales.cs",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Repositorio\\IRepositorioAnimales.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T01:34:22.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositorioPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\RepositorioPersonas.cs",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Repositorio\\RepositorioPersonas.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Repositorio\\RepositorioPersonas.cs",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Repositorio\\RepositorioPersonas.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T01:29:40.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonasForm.razor",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\PersonasForm.razor",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Components\\Pages\\PersonasForm.razor",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\PersonasForm.razor",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Components\\Pages\\PersonasForm.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:24:42.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonasIndex.razor",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\PersonasIndex.razor",
+              "RelativeDocumentMoniker": "Zoologico\\Zoologico\\Components\\Pages\\PersonasIndex.razor",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Zoologico\\Zoologico\\Zoologico\\Components\\Pages\\PersonasIndex.razor",
+              "RelativeToolTip": "Zoologico\\Zoologico\\Components\\Pages\\PersonasIndex.razor",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T01:24:41.268Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

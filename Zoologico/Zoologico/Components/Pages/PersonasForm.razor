@@ -40,7 +40,7 @@
 @code {
     [Parameter]
     public int Id { get; set; }
-    private string _mensaje = ""; //
+    private string _mensaje = ""; 
     private Persona? _persona = new();
     private List<Area> _areas = new();
 
@@ -60,7 +60,7 @@
 
     private async Task Guardar()
     {
-        //
+       
         if (Id > 0)
         {
             await _repositorio.Update(Id, _persona!);

@@ -15,7 +15,7 @@ namespace Zoologico.Repositorio
 
         public async Task<List<Persona>> GetAll()
         {
-            return await _context.Personas.ToListAsync();
+            return await _context.Personas.Include(a=>a.Area).ToListAsync();
         }
         //Jala la info de la bd de areas 
         public async Task<List<Area>> GetAreas()
